@@ -1,0 +1,114 @@
+body {
+    background: #000;
+}
+
+h3 {
+    margin: 0;
+    font-family: Montserrat, serif;
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#formWrap {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px 50px 40px;
+}
+
+#titleInput, #contentInput {
+    box-sizing: border-box;
+    font-family: Montserrat, serif;
+    width: 85%;
+    background: #ececec;
+    outline: none;
+    border: none;
+}
+
+#titleInput {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4em;
+    border-radius: 20px 20px 0 0;
+    padding: 25px;
+}
+
+#contentInput {
+    padding: 15px;
+    background: #ececec;
+    font-weight: 500;
+    font-size: 1em;
+    height: 10em;
+    resize: none;
+}
+
+#checkBoxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+    width: 85%;
+}
+
+input[type='checkbox'] {
+    width: 100%;
+    display: none;
+}
+
+label {
+    font-family: Montserrat, serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 15px;
+    user-select: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#isShownInput:checked + label, #isImportantInput:checked + label {
+    font-weight: 700;
+    background: #dcdcdc;
+}
+
+.wrappers {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#submitButton {
+    width: 85%;
+    border: none;
+    outline: none;
+    background: #000000;
+    color: white;
+    font-family: Montserrat, serif;
+    border-radius: 0 0 20px 20px;
+    font-size: 1.3em;
+    padding: 15px;
+    font-weight: 700;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}

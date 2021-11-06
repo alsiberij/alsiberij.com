@@ -1,0 +1,467 @@
+body {
+    background: #000;
+}
+
+p {
+    margin: 0;
+}
+
+.icon {
+    width: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#mainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsContent {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#authorTimeImportance {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 25px 10px 25px;
+    box-sizing: border-box;
+}
+
+.headItem {
+    width: 33.333%;
+    font-family: Montserrat, serif;
+    font-weight: 700;
+}
+
+#author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#author a {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#author a::after {
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    content:"";
+    background: #ea0909;
+    width:100%;
+    height:0.14rem;
+    border-radius: 5px;
+}
+
+#importance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exMark {
+    width: 50px;
+}
+
+#dateAndTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#dateAndTimeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#titleAndContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    font-family: Montserrat, serif;
+}
+
+#title {
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#content {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px;
+    background: #ececec;
+}
+
+#likesCommentsViews {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    font-family: Montserrat, serif;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#likesAndComments {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#likesAmount, #commentsAmount {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#likesAmount:hover, #commentsAmount:hover {
+    cursor: pointer;
+}
+
+#likesSpace {
+    width: 20px;
+}
+
+.liked {
+    color: #ea0909;
+}
+
+#views {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Montserrat, serif;
+}
+
+.comment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #fff;
+    color: black;
+}
+
+.commentAuthorAndDate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+    box-sizing: border-box;
+}
+
+.commentAuthorAndDate a {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.commentAuthorAndDate a::after {
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    content:"";
+    background: #ea0909;
+    width:100%;
+    height:0.14rem;
+    border-radius: 5px;
+}
+
+.commentContent {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.commentContent p {
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 1rem;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background: #ececec;
+    padding: 10px 25px 10px 25px;
+}
+
+.dateAndLikes {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 25px 25px 25px;
+    box-sizing: border-box;
+}
+
+.commentDate {
+    font-weight: 500;
+}
+
+.time {
+    font-weight: 700;
+}
+
+.commentLikes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.commentLikes:hover {
+    cursor: pointer;
+}
+
+#commentFormWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: black;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    font-family: Montserrat, serif;
+}
+
+#commentFormWrapper h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: #ffffff;
+    color: black;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+h2 a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+
+h2 a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content:"";
+    background: #ea0909;
+    width:100%;
+    height:0.14rem;
+    border-radius: 5px;
+}
+
+
+#commentForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#commentForm p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+#commentForm span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ea0909;
+    background: #dcdcdc;
+}
+
+#textareaAndButton {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    border: none;
+    resize: none;
+    background: #dcdcdc;
+    color: black;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+#commentForm input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    background: #000;
+    font-family: Montserrat, serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+
+#commentForm input:hover {
+    cursor: pointer;
+}
+
+.icon2 {
+    padding-left: 0;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.avatarAndNickname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#postManageWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#postManageWrap2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#postManageWrap button {
+    color: black;
+    background: white;
+    font-family: Montserrat, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#showOrHide {
+    border-radius: 20px 0 0 20px;
+}
+
+#delete {
+    border-radius: 0 20px 20px 0;
+}
+
+.commentDate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#date p {
+    font-weight: 700;
+}
+
+#time p {
+    font-weight: 500;
+}

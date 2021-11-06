@@ -1,0 +1,153 @@
+body {
+    background: #000;
+}
+
+h3 {
+    margin: 0;
+    font-family: Montserrat, serif;
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#formWrap {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px 50px 40px;
+}
+
+input[type=file], input[type=checkbox] {
+    display: none;
+}
+
+.option {
+    width: 80%;
+    font-family: Montserrat, serif;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #ececec;
+}
+
+#newPhotoOption, #newPhotoOption2, #newPhotoOption3 {
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newPhotoOption label, #newPhotoOption2 label, #newPhotoOption3 label {
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-family: Montserrat, serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+#newPhotoOption2 label, #newPhotoOption3 label {
+    border-radius: 0;
+}
+
+#newPhotoOption label:hover, #newPhotoOption2 label:hover {
+    cursor: pointer;
+}
+
+select {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+option {
+    padding: 10px 15px;
+}
+
+#descriptionArea {
+    font-weight: 600;
+    padding: 15px;
+    background: #ececec;
+    resize: none;
+    font-size: 1.2rem;
+}
+
+#newPhotoPrice {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+input[type=checkbox]:checked + label {
+    background: #cecece;
+    font-weight: 800;
+}
+
+#photoPrivacy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox] + label {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 80%;
+    font-family: Montserrat, serif;
+    font-size: 1.3rem;
+    background: #ececec;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] {
+    font-family: Montserrat, serif;
+    width: 80%;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}

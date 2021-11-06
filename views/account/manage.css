@@ -1,0 +1,250 @@
+body {
+    background: #000;
+}
+
+p {
+    margin: 0;
+}
+
+#mainWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#manageProfile {
+    border-radius: 20px;
+    padding: 25px;
+    background: #ffffff;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#avatarSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatarOption, #avatarDeleteOption, #privilegesSection input + label {
+    background: #ececec;
+}
+
+#avatarSection label {
+    width: 100%;
+    color: black;
+    font-family: Montserrat, serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,0);
+}
+
+#avatarSection label:hover {
+    cursor: pointer;
+}
+
+#privacySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#privacySection > * {
+    width: 50%;
+}
+
+#nicknameAndLocationSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#nicknameAndLocationSection > * {
+    width: 50%;
+}
+
+#birthdayAndBioSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#birthdayAndBioSection  > * {
+    width: 50%;
+}
+
+#submitSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="file"], input[type="checkbox"] {
+    display: none;
+}
+
+.manageOption {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 25px;
+    background: #ececec;
+    border-radius: 20px;
+    margin: 5px;
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.manageOptionButton {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.manageOptionButton > * {
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+#submitSection input {
+    color: white;
+    background: #000;
+    border: none;
+    outline: none;
+    font-family: Montserrat, serif;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+#submitSection input:hover {
+    cursor: pointer;
+}
+
+.privacyOption p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.labelAndCircle {
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelAndCircle label {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.labelAndCircle label:hover {
+    cursor: pointer;
+}
+
+.privacyOption input[type=radio] {
+    display: none;
+}
+
+.privacyOption input[type=radio]:checked + label{
+    color: black;
+    font-weight: 700;
+}
+
+#avatarDeleteOption input[type=checkbox] + label {
+    border: 2px solid rgba(0,0,0,0);
+}
+
+#avatarDeleteOption input[type=checkbox]:checked + label {
+    border: 2px solid red;
+}
+
+#nicknameAndLocationSection p, #birthdayAndBioSection p {
+    margin-bottom: 10px;
+}
+
+#nicknameAndLocationSection input, #birthdayAndBioSection input, .labels {
+    width: 100%;
+    padding: 10px;
+    font-family: Montserrat, serif;
+    font-size: 0.9em;
+    border-radius: 10px;
+    border: none;
+    background: #ffffff;
+    font-weight: 600;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#nicknameAndLocationSection input:focus, #birthdayAndBioSection input:focus {
+    outline: none;
+}
+
+#privilegesSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#privilegesSection label {
+    width: 100%;
+    color: black;
+    font-family: Montserrat, serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#privilegesSection input {
+
+}
+
+#privilegesSection input[type=checkbox] + label {
+    border: 2px solid rgba(0,0,0,0);
+}
+
+#privilegesSection input[type=checkbox]:checked + label {
+    border: 2px solid rgba(255,0,0,1);
+}
+
+

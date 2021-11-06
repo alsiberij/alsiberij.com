@@ -1,0 +1,82 @@
+#header1 {
+    position: absolute;
+}
+
+#navPanel {
+    display: none;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+#mainMenu {
+    width: 100%;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    list-style: none;
+}
+
+#mainMenu li {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+#mainMenu li a {
+    font-family: Montserrat, serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 4em;
+    position: relative;
+}
+
+#mainMenu li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content:"";
+    background: #ea0909;
+    width:100%;
+    height:5%;
+    border-radius: 5px;
+}
+
+.menuItem2 {
+    background: #fff;
+    z-index: 4;
+}
+
+.menuItem2 a {
+    color: black;
+}
+
+.menuItem1 {
+    background: #000;
+    z-index: 5;
+}
+
+.menuItem1 a {
+    color: white;
+}
+

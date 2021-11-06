@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !css$
+RewriteCond %{REQUEST_URI} !js$
+RewriteCond %{REQUEST_URI} !jpg$
+RewriteCond %{REQUEST_URI} !svg$
+RewriteRule ^.*$ index.php
