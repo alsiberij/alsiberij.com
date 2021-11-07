@@ -23,7 +23,7 @@ class StoreController extends Controller {
                 return true;
             }
 
-            case 'IndexCategory': {
+            case 'ShowCategory': {
                 $categoryName = $this->routeParams[0];
                 $categoriesList = CategoryPhoto::getCategoriesList();
                 $categoryID = 0;
@@ -88,7 +88,7 @@ class StoreController extends Controller {
                 return true;
             }
 
-            case 'ShowItem': {
+            case 'ShowPhoto': {
                 $categoryName = $this->routeParams[0];
                 $photoID = $this->routeParams[1];
                 $categoriesList = CategoryPhoto::getCategoriesList();
@@ -127,7 +127,7 @@ class StoreController extends Controller {
                 return $success;
             }
 
-            case 'BuyItem': {
+            case 'Buy': {
                 if (!$this->isAuthorized()) {
                     header('Location: /account/login', true, 303);
                     return true;
@@ -154,7 +154,7 @@ class StoreController extends Controller {
                 return true;
             }
 
-            case 'DownloadItem': {
+            case 'Download': {
                 if (!$this->isAuthorized()) {
                     require(ROOT.'views/templates/error/error2.php');
                     return true;

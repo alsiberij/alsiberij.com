@@ -15,7 +15,7 @@ class NewsController extends Controller {
                 return true;
             }
 
-            case 'ShowNews': {
+            case 'Show': {
                 $newsID = $this->getRouteParams()[0];
                 $news = &News::newInstance($newsID);
 

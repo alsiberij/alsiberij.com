@@ -18,7 +18,7 @@ class AccountController extends Controller {
                 return true;
             }
 
-            case 'ShowAccount': {
+            case 'Show': {
                 $accountID = $this->getRouteParams()[0];
                 $account = &User::newInstance($accountID);
 
@@ -49,7 +49,7 @@ class AccountController extends Controller {
                 }
             }
 
-            case 'ManageAccount': {
+            case 'Manage': {
                 $accountID = $this->getRouteParams()[0];
                 $account = &User::newInstance($accountID);
 
@@ -110,7 +110,7 @@ class AccountController extends Controller {
                 return true;
             }
 
-            case 'Activation': {
+            case 'Activate': {
                 $token = $this->getQueryParams()['token'] ?? '';
                 $success = User::activateUser($token);
                 require(ROOT.'views/account/activation.php');
